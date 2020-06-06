@@ -8,14 +8,7 @@ const {width} = Dimensions.get('screen');
 function BottomTabBar({navigation}) {
   return (
     <View style={styles.tabBar}>
-      <Icon.Button
-        name="home"
-        size={30}
-        color="#900"
-        style={styles.icon}
-        onPress={() => navigation.navigate('Subject')}
-      />
-      <Icon name="rocket" size={30} color="#900" style={styles.icon} />
+
     </View>
   );
 }
