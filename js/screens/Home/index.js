@@ -22,9 +22,6 @@ function Home() {
 
       <Text style={styles.findMore}>Find more</Text>
 
-      <View style={styles.screen}>
-        <BottomTabBar />
-      </View>
     </View>
   );
 }

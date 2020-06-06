@@ -29,9 +29,7 @@ function Subject() {
         <LessonBox />
       </ScrollView>
 
-      <View style={styles.screen}>
-        <BottomTabBar />
-      </View>
+
     </View>
   );
 }
