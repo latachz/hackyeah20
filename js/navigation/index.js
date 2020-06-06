@@ -6,7 +6,8 @@ import FontAwesomeIcon from 'react-native-vector-icons/FontAwesome';
 
 import HomeScreen from '../screens/Home';
 import SubjectScreen from '../screens/Subject';
-import ProfileScreen from '../screens/Profile'
+import ProfileScreen from '../screens/Profile';
+import ARScreen from '../screens/AR';
 
 const Tab = createBottomTabNavigator();
 
@@ -24,6 +25,8 @@ export default function Navigation() {
               iconName = focused ? 'globe' : 'globe';
             } else if (route.name === 'Profile') {
               iconName = focused ? 'user' : 'user';
+            } else if (route.name === 'AR') {
+              iconName = focused ? 'camera' : 'camera';
             }
 
             // You can return any component that you like here!
@@ -39,6 +42,7 @@ export default function Navigation() {
         <Tab.Screen name="Home" component={HomeScreen} />
         <Tab.Screen name="Subject" component={SubjectScreen} />
         <Tab.Screen name="Profile" component={ProfileScreen} />
+        <Tab.Screen name="AR" component={ARScreen} />
       </Tab.Navigator>
     </NavigationContainer>
   );
